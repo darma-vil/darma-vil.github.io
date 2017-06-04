@@ -1,0 +1,124 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+.homesect
+    padding-top: 80px
+    background-color: #fff
+    .section-head
+        margin-bottom: 80px
+        p
+            margin-top: 60px
+        h2
+            text-align: center
+            position: relative
+            &::after
+                position: absolute
+                content: ''
+                height: 4px
+                background-color: $main-color
+                width: 165px
+                display: block
+                bottom: -30px
+                left: 50%
+                transform: translate(-50%,0)
+.section_1
+    .section-content 
+        min-height: 628px
+        background-image: url(../img/s1-gray.jpg)
+        background-repeat: no-repeat
+        background-position: bottom
+    
+.section-bottom
+    background-color: $headers-color
+    padding: 50px 0
+    text-align: center
+    
+.section-content 
+    position: relative
+    padding-bottom: 90px 
+    .info-item-wrap
+        &:nth-child(4), &:last-child
+            .info-item
+                 margin-bottom: 0
+    .s1_bottom_triangle
+        height: 90px
+        bottom: 0
+        position: absolute
+        background-image: url(../img/s1_triangle.svg)
+        width: 100%
+        background-position: top
+        background-size: 100% 100%
+        text-align: center
+        .triangle-logo
+            width: 200px
+            position: relative
+            top: -137px
+            left: 45px
+            transition: all .9s ease
+            cursor: pointer
+            &:hover
+                transform: translateX(50px)
+                top: -133px                            
+
+.info-item
+    padding-left: 34px
+    margin: 54px 0
+    max-width: 264px
+    line-height: 28px
+    h4
+        font-family: "helvetica"
+        margin-top: 0
+        margin-bottom: 20px
+        a
+            color: $main-color
+            font-size: 22px
+            text-decoration: underline
+            text-transform: none
+    p
+        font-size: 16px
+        padding-bottom: 90px
+        
+.info-item-wrap:nth-child(2)
+    .info-item
+        margin-top: 0
+        
+.s1-bottom
+    padding: 15px 0 65px
+    background-color: #475E84
+    .info-item
+        margin: 20px 0 0
+    .info-item-wrap:nth-child(2)
+        .info-item
+            margin-top: 40px
+    p
+        color: #fff
+    
+        
+//ALWAYS END
+@import "media"
