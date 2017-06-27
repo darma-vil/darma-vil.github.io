@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'MullerThin';
+  src: url('MullerThin.eot');
+  src: url('MullerThin.woff2') format('woff2'),
+       url('MullerThin.woff') format('woff'),
+       url('MullerThin.ttf') format('truetype'),
+       url('MullerThin.svg#MullerThin') format('svg'),
+       url('MullerThin.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
